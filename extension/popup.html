@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>StreamCatch</title><link rel="stylesheet" href="popup.css"></head>
+<body>
+<header class="topbar"><div class="brand"><span class="brand-mark" aria-hidden="true">↓</span><strong>StreamCatch</strong><span class="version">视频下载助手</span></div><span id="helper-status" class="helper-status"><i></i><span>正在连接助手…</span></span></header>
+<main>
+<div class="section-heading"><div><h1>当前页面的视频 <span id="count">0</span></h1><p id="site">正在读取页面…</p></div><button id="scan" class="text-button" title="重新检测网页视频">↻ 重新检测</button></div>
+<div id="warning" class="notice hidden"></div><div id="error" class="error hidden" role="alert"></div>
+<div id="helper-missing" class="notice hidden">本地助手未连接。<button id="install-help" class="text-button">查看安装方法 ↗</button><button id="reconnect" class="text-button">重新连接</button></div>
+<div id="cards" class="cards"></div>
+<section id="history-section" class="history-section hidden"><div class="section-heading history-heading"><h2>下载记录 <span id="history-count">0</span></h2><span class="muted">关闭弹窗，下载仍会继续</span></div><div id="history" class="history"></div></section>
+<section id="settings-panel" class="settings-panel hidden"><h2>下载设置</h2><label class="check"><input type="checkbox" id="use-cookies"><span>使用当前网站的登录状态<small>需要时授权，仅交给本机下载助手。</small></span></label><p>画质选择为上限；默认下载最佳可用画质。音画自动合并，保存为 QuickTime 兼容 MP4；需要转换时会显示进度。</p><p>保存位置：下载 / StreamCatch</p></section>
+</main>
+<footer><div class="footer-left"><button id="settings" class="icon-button" title="下载设置" aria-label="下载设置" aria-expanded="false"></button><span class="footer-note"><i></i>文件保存在本机</span></div><div class="footer-actions"><button id="page-download" class="text-button" title="让本地助手直接解析当前网页">没有检测到？</button><button id="history-toggle" class="icon-button" title="下载记录" aria-label="下载记录" aria-expanded="false"></button><button id="downloads" class="icon-button" title="打开下载文件夹" aria-label="打开下载文件夹"></button><button id="clear" class="icon-button" title="清空当前页面检测结果" aria-label="清空当前页面检测结果"></button><button id="help" class="icon-button" title="使用指南" aria-label="使用指南"></button></div></footer>
+<script type="module" src="popup.js"></script></body></html>

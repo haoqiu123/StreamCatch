@@ -1,0 +1,15 @@
+{
+  "name": "streamcatch",
+  "version": "1.4.0",
+  "private": true,
+  "type": "module",
+  "description": "StreamCatch browser extension and macOS native download helper",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test tests/node/*.test.mjs",
+    "check": "node scripts/check.mjs",
+    "package": "python3 scripts/package-release.py"
+  }
+}
