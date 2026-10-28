@@ -1,13 +1,14 @@
 <!doctype html>
 <html lang="zh-CN">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>安装 StreamCatch</title>
-<style>
-:root{color-scheme:dark;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#17191d;color:#eef2f6}*{box-sizing:border-box}body{max-width:860px;margin:0 auto;padding:56px 24px 72px}header{display:flex;align-items:center;gap:16px}header img{width:56px;height:56px}h1{font-size:30px;margin:0}p{line-height:1.8;color:#b8c2cd}a{color:#6bdaff}main{margin-top:36px;display:grid;gap:16px}section{background:#22262c;border:1px solid #39414a;border-radius:16px;padding:22px 26px}h2{font-size:20px;margin:0 0 10px}section p:last-child{margin-bottom:0}code{background:#11151a;padding:5px 8px;border-radius:6px;user-select:all;overflow-wrap:anywhere}.number{color:#15b9e8;font-weight:700;margin-right:9px}.note{font-size:14px}footer{margin-top:30px}strong{color:#f4f6f8}
-</style></head>
-<body><header><img src="extension/icons/128.png" alt=""><div><h1>安装 StreamCatch</h1><p style="margin:4px 0 0">四步开始，把网页视频保存在本机。</p></div></header>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>安装 StreamCatch</title><link rel="stylesheet" href="docs/install.css"></head>
+<body>
+<nav class="languages" aria-label="语言"><span aria-current="page">简体中文</span><span>·</span><a href="Start Here.html" lang="en">English</a></nav>
+<header><img src="extension/icons/128.png" alt=""><div><h1>StreamCatch</h1><p>识别网页视频，保存到本机。</p></div></header>
 <main>
-<section><h2><span class="number">01</span>保留这个文件夹</h2><p>把整个 <strong>StreamCatch</strong> 文件夹放到长期保留的位置，例如“文稿”。安装后请保留 <strong>extension</strong> 文件夹。</p></section>
-<section><h2><span class="number">02</span>加载 Chrome 扩展</h2><p>在 Chrome 地址栏输入 <code>chrome://extensions</code>，打开右上角<strong>开发者模式</strong>，点击<strong>加载已解压的扩展程序</strong>，选择本文件旁的 <strong>extension</strong> 文件夹。</p><p class="note">选择包含 manifest.json 的那一层。完成后在工具栏拼图菜单中固定 StreamCatch。</p></section>
-<section><h2><span class="number">03</span>双击安装 Mac 助手</h2><p>双击本文件旁的 <strong>安装Mac助手.command</strong>，按提示确认依赖安装，等到出现<strong>安装完成</strong>。首次需要先从 <a href="https://brew.sh/" target="_blank" rel="noreferrer">Homebrew 官网</a>安装 Homebrew。</p><p class="note">如果双击没有启动，可先检查脚本，再在终端输入 <code>zsh </code>，把 .command 文件拖进去并回车。脚本会准备 Python、FFmpeg、Node.js 和下载组件。</p></section>
-<section><h2><span class="number">04</span>打开视频，点击下载</h2><p>播放原网页视频几秒，再点 StreamCatch。显示<strong>本地助手已连接</strong>后，选择画质并点<strong>下载</strong>。文件保存在 <strong>Finder → 下载 → StreamCatch</strong>。</p><p class="note">关闭弹窗后仍会继续下载，请保持浏览器运行。无法保证所有网站可下载，DRM 内容不支持。</p></section>
-</main><footer><p><a href="docs/INSTALL.md">详细安装与更新说明</a> · <a href="https://github.com/haoqiu123/StreamCatch/releases/latest" target="_blank" rel="noreferrer">下载最新版</a> · <a href="https://github.com/haoqiu123/StreamCatch/issues" target="_blank" rel="noreferrer">反馈问题</a></p><p class="note">StreamCatch 1.4.1 · GitHub 安装版 · 不需要编译扩展。</p></footer></body></html>
+<section><h2><span class="number">01</span>保留文件夹</h2><p>把整个 <strong>StreamCatch</strong> 文件夹放到长期保留的位置，例如“文稿”。</p></section>
+<section><h2><span class="number">02</span>加载扩展</h2><p>Chrome 地址栏输入 <code>chrome://extensions</code>，开启<strong>开发者模式</strong>，点击<strong>加载已解压的扩展程序</strong>，选择本文件旁的 <strong>extension</strong> 文件夹。</p></section>
+<section><h2><span class="number">03</span>安装 Mac 助手</h2><p>首次先安装 <a href="https://brew.sh/" target="_blank" rel="noreferrer">Homebrew</a>，再双击 <strong>安装Mac助手.command</strong>。按提示确认依赖安装，等待显示<strong>安装完成</strong>。</p><p class="note">如果双击没有启动，可先检查脚本，在终端输入 <code>zsh </code>，把脚本拖进去并回车。</p></section>
+<section><h2><span class="number">04</span>开始下载</h2><p>播放原网页视频，打开 StreamCatch。显示<strong>本地助手已连接</strong>后，选择画质并点<strong>下载</strong>。</p><p class="note">保存位置：<strong>下载 → StreamCatch</strong>。关闭弹窗后下载仍会继续，请保持浏览器运行。</p></section>
+</main>
+<footer><p><a href="https://github.com/haoqiu123/StreamCatch/blob/main/docs/INSTALL.md" target="_blank" rel="noreferrer">安装与常见问题</a> · <a href="https://github.com/haoqiu123/StreamCatch/releases/latest" target="_blank" rel="noreferrer">最新版</a> · <a href="https://github.com/haoqiu123/StreamCatch/issues" target="_blank" rel="noreferrer">反馈</a></p><p class="note">1.4.2 · MIT · macOS 助手 · DRM 内容不支持</p></footer>
+</body></html>

@@ -8,9 +8,10 @@ import zipfile
 
 ROOT = Path(__file__).resolve().parents[1]
 DIST = ROOT / 'dist'
-PUBLIC_FILES = ['LICENSE', 'README.md', 'CHANGELOG.md', '开始安装.html', '安装Mac助手.command',
+PUBLIC_FILES = ['LICENSE', 'README.md', 'README.en.md', 'CHANGELOG.md', '开始安装.html', 'Start Here.html', '安装Mac助手.command',
                 '卸载Mac助手.command', 'native/host.py', 'native/install.py',
-                'docs/INSTALL.md', 'docs/PRIVACY.md', 'docs/images/popup.png']
+                'docs/INSTALL.md', 'docs/INSTALL.en.md', 'docs/PRIVACY.md', 'docs/PRIVACY.en.md',
+                'docs/DEVELOPMENT.md', 'docs/install.css', 'docs/images/popup.png']
 
 
 def extension_files():

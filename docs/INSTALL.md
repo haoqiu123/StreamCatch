@@ -1,5 +1,7 @@
 # 安装 StreamCatch
 
+**简体中文** · [English](INSTALL.en.md)
+
 ## 1. 下载并解压
 
 [下载 Mac 完整安装包](https://github.com/haoqiu123/StreamCatch/releases/latest/download/StreamCatch-macOS.zip)，双击 ZIP 解压。
@@ -9,12 +11,14 @@
 ```text
 StreamCatch/
 ├── 开始安装.html
+├── Start Here.html
 ├── 安装Mac助手.command
 ├── 卸载Mac助手.command
 ├── extension/          ← Chrome 需要选择这一层
 │   └── manifest.json
 ├── native/
 ├── README.md
+├── README.en.md
 └── docs/
 ```
 
@@ -66,3 +70,15 @@ Edge 使用 `edge://extensions`，Brave 使用 `brave://extensions`，操作类�
 ## 核对下载文件
 
 Release 同时提供 `SHA256SUMS.txt`。在下载目录执行 `shasum -a 256 -c SHA256SUMS.txt`，可以核对 ZIP 是否完整。它用于检查文件一致性，不是 Apple 公证或 Chrome 商店签名。
+
+## 常见问题
+
+**没有发现视频？** 在原网页播放几秒，再点“重新检测”；也可以点击“没有检测到？”让助手解析原网页。
+
+**助手未连接？** 运行 `安装Mac助手.command`，等待“安装完成”，再重新打开插件。不要删除或移动已经加载的 `extension` 文件夹。
+
+**提示 403 或需要登录？** 先确认视频在原网页能正常播放，再重新检测。需要登录时，可在齿轮设置中授权使用当前网站登录状态；站点限制或 DRM 内容仍可能无法下载。
+
+**中途断流？** 重新检测后重试。助手在完整性检查通过后才发布 MP4，不会把残缺文件标为完成。
+
+**系统兼容性？** 建议使用 Homebrew 当前支持的 macOS。Intel Mac 和旧系统的依赖支持情况见 [Homebrew 官方说明](https://docs.brew.sh/Installation)。

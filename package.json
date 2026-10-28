@@ -1,9 +1,9 @@
 {
   "name": "streamcatch",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "private": true,
   "type": "module",
-  "description": "StreamCatch browser extension and macOS native download helper",
+  "description": "Find web videos and save them locally.",
   "engines": {
     "node": ">=22"
   },

@@ -1,5 +1,11 @@
 # 更新记录
 
+## 1.4.2
+
+- 中英文 README、安装指南、隐私说明与安装首页；精简项目简介。
+- Bilingual README, setup guides, privacy documentation and setup pages, with a simpler project overview.
+- 仅调整文档、打包与版本标识，下载行为不变。 Documentation, packaging and version labels only; download behavior is unchanged.
+
 ## 1.4.1
 
 - 正式采用 MIT 许可证开源，补齐仓库许可证与贡献说明。

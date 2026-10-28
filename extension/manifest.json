@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "StreamCatch · 视频下载助手",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "description": "发现网页视频，下载 MP4、WebM、HLS；可选本地助手支持 DASH、音画合并和更多网站。",
   "minimum_chrome_version": "120",
   "permissions": [
