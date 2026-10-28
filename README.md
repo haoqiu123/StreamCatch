@@ -1,5 +1,7 @@
 # StreamCatch · 视频下载助手
 
+[MIT 开源许可证](LICENSE) · 欢迎提交 Issue 和 Pull Request
+
 在 Chrome 中识别网页视频，选择画质并下载到本机。Mac 助手自动合并音画，输出 QuickTime 兼容的 MP4。
 
 **[⬇ 下载 Mac 完整安装包](https://github.com/haoqiu123/StreamCatch/releases/latest/download/StreamCatch-macOS.zip)** · **[查看最新版与更新说明](https://github.com/haoqiu123/StreamCatch/releases/latest)**
@@ -77,3 +79,9 @@ python3 scripts/package-release.py
 发布包写入 `dist/`，只包含运行文件和公共说明，不包含本机安装记录、浏览器数据、下载历史或测试视频。第三方下载器和转码组件由安装脚本从 Homebrew / PyPI 获取，未随仓库捆绑。
 
 反馈问题请到 [Issues](https://github.com/haoqiu123/StreamCatch/issues)。请提供版本、浏览器、系统、脱敏后的错误文字及可公开的复现链接；不要提交 Cookie、密码、解密密钥、私密媒体或带签名的下载地址。
+
+## 开源许可证
+
+本项目采用 [MIT 许可证](LICENSE)。允许使用、修改、再分发及商用；分发时须保留版权和许可证声明。第三方依赖仍遵循各自许可证。
+
+欢迎提交 Issue、修复和功能改进。提交 Pull Request 前请运行上面的测试，并在说明中写清问题、改动和验证方式。

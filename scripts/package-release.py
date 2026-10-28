@@ -8,7 +8,7 @@ import zipfile
 
 ROOT = Path(__file__).resolve().parents[1]
 DIST = ROOT / 'dist'
-PUBLIC_FILES = ['README.md', 'CHANGELOG.md', '开始安装.html', '安装Mac助手.command',
+PUBLIC_FILES = ['LICENSE', 'README.md', 'CHANGELOG.md', '开始安装.html', '安装Mac助手.command',
                 '卸载Mac助手.command', 'native/host.py', 'native/install.py',
                 'docs/INSTALL.md', 'docs/PRIVACY.md', 'docs/images/popup.png']
 
@@ -25,7 +25,7 @@ def archive(name, prefix, files, extension_only=False):
             source = ROOT / relative
             if not source.is_file() or source.is_symlink():
                 raise ValueError(f'Missing or symbolic public file: {relative}')
-            member = relative.relative_to('extension') if extension_only else relative
+            member = relative.relative_to('extension') if extension_only and relative.parts[0] == 'extension' else relative
             info = zipfile.ZipInfo(str(Path(prefix) / member), date_time=(1980, 1, 1, 0, 0, 0))
             info.external_attr = (stat.S_IFREG | (0o755 if source.suffix == '.command' else 0o644)) << 16
             info.compress_type = zipfile.ZIP_DEFLATED
@@ -37,7 +37,7 @@ def main():
     assert manifest['version'] == json.loads((ROOT / 'package.json').read_text())['version']
     DIST.mkdir(exist_ok=True)
     files = list(extension_files())
-    archive('StreamCatch-extension.zip', 'StreamCatch-extension', files, extension_only=True)
+    archive('StreamCatch-extension.zip', 'StreamCatch-extension', files + [Path('LICENSE')], extension_only=True)
     archive('StreamCatch-macOS.zip', 'StreamCatch', files + [Path(p) for p in PUBLIC_FILES])
     assets = ['StreamCatch-extension.zip', 'StreamCatch-macOS.zip']
     (DIST / 'SHA256SUMS.txt').write_text(''.join(
